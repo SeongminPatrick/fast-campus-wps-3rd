@@ -1,6 +1,6 @@
 ## FAST-CAMPUS WEB PROGRAMMING SCHOOL
 
-#### **1. Curriculum**
+### **1. Curriculum**
 
 ##### Unit 1. Computational Thinking
 - 프로그래밍의 개념 / 컴퓨터의 구성 및 동작
@@ -63,10 +63,10 @@
 - iOS 개발 SCHOOL, Android 개발 SCHOOL, 프론트엔드 개발 SCHOOL
 - 최종 프로젝트 발표
 
-#### **2. Term Dates**
+### **2. Term Dates**
 - 2016.09.05 ~ 2016.12.09
 
-#### **3. Daily Schedule**
+### **3. Daily Schedule**
 - 09:00 ~ 10:00 : Daily Scrum + Activities
 - 10:00 ~ 12:00 : Lecture + Practice
 - 12:00 ~ 13:00 : Lunch
