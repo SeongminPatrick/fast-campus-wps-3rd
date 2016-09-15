@@ -6,11 +6,16 @@ sum_digit함수를 완성해보세요.
 """
 
 def sum_digit(number):
-    number = str(number)
-    numbers = []
-    result = 0
-    for i in number:
-        result += int(i)
-    return result
+    # number = str(number)
+    # numbers = []
+    # result = 0
+    # for i in number:
+    #     result += int(i)
+    # return result
 
-print("결과 : {}".format(sum_digit(123)));
+    if number < 10:
+        return number
+    else:
+        return number % 10 + sum_digit(number / 10)
+
+print("결과 : {}".format(sum_digit(1233424234223343)));
