@@ -1,0 +1,10 @@
+def is_palindrome(text):
+    revers = []
+
+    for i in text[::-1]:
+        revers.append(i)
+
+    if revers == list(text):
+        return True
+    else:
+        return False
