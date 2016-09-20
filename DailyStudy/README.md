@@ -13,7 +13,7 @@
 
 ### Week 3
 - [Day01_개발환경세팅_자료형_반복조건문_함수기초][3-1]
-- Day02_
+- [Day02_알고리즘_클래스_객체지향][3-2]
 
 
 
@@ -57,5 +57,5 @@
 [2-1]: https://www.evernote.com/l/An2TlbU_Lm1Ah5Yr8Vl7xdc5jzIO3CA5ac4
 [2-2]: https://www.evernote.com/l/An3UtnZDAmZMuL4QwdHJOfFEeBm7qpg9B1Y
 [3-1]: https://www.evernote.com/l/An2B6bZYK89KWbT4z5dNTJB6eQOGYKA3ZZw
-
+[3-2]: https://www.evernote.com/l/An1c7YEa3bJM95zCZBL52arqEeo-0l4LWpM
 
