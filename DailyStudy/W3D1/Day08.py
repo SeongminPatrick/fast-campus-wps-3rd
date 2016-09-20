@@ -45,7 +45,7 @@
 
 """ sep 종류 가리지 않고 read """
 
-def read_csv(filename, sep):
+def read_csv(filename, sep=","):
 	with open(filename, "r") as fp:
 		data = fp.read()
 		rows = data.split('\n')
