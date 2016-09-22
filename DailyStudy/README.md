@@ -1,4 +1,4 @@
-## FAST-CAMPUS WEB DailyStudy
+FAST-CAMPUS WEB DailyStudy
 
 ### Week 1
 - [Day01. 컴퓨터의 구조][1-1]
@@ -14,8 +14,8 @@
 ### Week 3
 - [Day01. 개발환경세팅, 자료형, 반복조건문, 함수기초][3-1]
 - [Day02. 알고리즘, list comprehension, lambda operator][3-2]
-- [Day03, 객체지향, 클래스][3-3]
-
+- [Day03, 객체지향, decorator, memorization, recursion, class][3-3]
+- [Day04. class, user - request - response, 크롤링][3-4]
 
 
 
@@ -57,3 +57,4 @@
 [3-1]: https://www.evernote.com/l/An2B6bZYK89KWbT4z5dNTJB6eQOGYKA3ZZw
 [3-2]: https://www.evernote.com/l/An1c7YEa3bJM95zCZBL52arqEeo-0l4LWpM
 [3-3]: https://www.evernote.com/l/An3uqwGlcZ5KF6vgYn2dSx65Vk5MaTcnISk
+[3-4]: https://www.evernote.com/l/An3IiMeywcNOFqZnh63rXTeEiXvDxrxESNk
