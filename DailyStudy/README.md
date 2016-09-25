@@ -16,7 +16,7 @@ FAST-CAMPUS WEB DailyStudy
 - [Day02. 알고리즘, list comprehension, lambda operator][3-2]
 - [Day03, 객체지향, decorator, memorization, recursion, class][3-3]
 - [Day04. class, user - request - response, 크롤링][3-4]
-
+- [Day05. Crawling, Iterator, Generator, API Crawling][3-5]
 
 
 
@@ -58,3 +58,4 @@ FAST-CAMPUS WEB DailyStudy
 [3-2]: https://www.evernote.com/l/An1c7YEa3bJM95zCZBL52arqEeo-0l4LWpM
 [3-3]: https://www.evernote.com/l/An3uqwGlcZ5KF6vgYn2dSx65Vk5MaTcnISk
 [3-4]: https://www.evernote.com/l/An3IiMeywcNOFqZnh63rXTeEiXvDxrxESNk
+[3-5]: https://www.evernote.com/l/An0oyPaEhwJBI6L40gR95T2HVBDgPe_fAr0
