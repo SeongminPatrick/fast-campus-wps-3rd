@@ -18,7 +18,8 @@ FAST-CAMPUS WEB DailyStudy
 - [Day04. class, user - request - response, 크롤링][3-4]
 - [Day05. Crawling, Iterator, Generator, API Crawling][3-5]
 
-
+### Week 4
+- [Day01. HTML/CSS 기초][4-1]
 
 
 
@@ -59,3 +60,4 @@ FAST-CAMPUS WEB DailyStudy
 [3-3]: https://www.evernote.com/l/An3uqwGlcZ5KF6vgYn2dSx65Vk5MaTcnISk
 [3-4]: https://www.evernote.com/l/An3IiMeywcNOFqZnh63rXTeEiXvDxrxESNk
 [3-5]: https://www.evernote.com/l/An0oyPaEhwJBI6L40gR95T2HVBDgPe_fAr0
+[4-1]: https://www.evernote.com/l/An0wdPtu28dDNbez7aHNCHsY8HTjhie9tJM

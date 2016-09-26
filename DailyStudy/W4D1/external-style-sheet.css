@@ -1,0 +1,9 @@
+#body-title3 {
+  font-size: 50px;
+  color: green;
+  background-color: #ffff00;
+  /*
+  background-color: rgb(255, 255, 0); <= rgb 표현식
+  background-color: rgba(255, 0, 0, 0.5);  <= 0.5는 투명도
+  */
+}

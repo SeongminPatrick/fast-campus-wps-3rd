@@ -1,0 +1,76 @@
+<!-- html 기본구조 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- 요소
+  1. 블럭요소 : h1, p, div
+  2. 인라인요소 : strong, a, span -->
+  <p>p 테그</p>
+  <h1>헤드라인 테그</h1>
+  <div>div 테그</div>
+
+  <!-- 줄바꾸기 lorem30 더비 데이터 넣어보기
+  p tag : 문단이 끝나면 밑에 여백이 자동으로 생김 -->
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ab nam deserunt maxime. Id expedita laudantium enim, magnam, excepturi laborum consequuntur qui, perspiciatis dolores distinctio velit facilis voluptatem. Voluptatum, obcaecati!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum odit distinctio impedit aperiam veniam, laborum accusamus quae perferendis natus fugit pariatur reprehenderit dolorem unde labore minus deserunt voluptates. Eligendi, quibusdam.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus id inventore cupiditate, aut cumque iste distinctio. Voluptatibus soluta, magni beatae? Similique quos molestiae odio atque eos accusantium iure cumque inventore.</p>
+
+  <!-- br tag는 줄바꿈하고 아래 간격이 생기진 않음 -->
+  <p>Lorem ipsum dolor sit amet,
+    <br> consectetur adipisicing elit.
+    <br> Magni maxime excepturi incidunt quidem, pariatur aut ex nulla nihil, velit assumenda ut fugit.
+    <br> Corporis sit fugiat eius ex pariatur beatae eum!
+  </p>
+
+  <!-- 링크 target으로 새창으로 열기 -->
+  <a href="http://www.clien.net/" target="_blank" title="링크열기">클리앙</a>
+
+  <!-- 목록 -->
+  <!-- order -->
+  <ol>
+    <li>항목</li>
+    <li>항목</li>
+    <li>항목</li>
+  </ol>
+
+  <!-- unorder -->
+  <ul>
+    <li>항목</li>
+    <li>항목</li>
+  </ul>
+
+  <!-- 정의목록 -->
+  <!-- dl>dt+dd*2 -->
+  <dl>
+    <dt>HyperTextMarkupLanguage</dt>
+    <dd>html의 형태를 지정하는 언어이다</dd>
+    <dd>웹페이지를 구형하는 마크업 언어</dd>
+    <dt>HyperTextMarkupLanguage</dt>
+    <dd>html의 형태를 지정하는 언어이다</dd>
+    <dd>html의 형태를 지정하는 언어이다</dd>
+  </dl>
+
+  <!-- 레이아웃 요소 -->
+  <div>
+    <p>블럭요소 내부에 <span>인라인 요소를 사용합니다.</span></p>
+  </div>
+
+
+  <!-- class와 id 속성
+  1. 네이밍 : 첫글자는 알파벳, 대문자 구분함, 대문자 별로안씀, 언더바 잘안씀
+  2. 클래스와 아이디 차이 : 아이디는 고유값, 클래스는 여러번 사용 가능
+  3. 변수명은 길더라도 해당요소의 의미를 적합하게 짓는것이 좋다 -->
+  <div>
+    <p class="chapter" id="chaper1">class : chapter, id : chapter1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit debitis fugit aperiam dignissimos labore obcaecati voluptatibus repudiandae repellat molestias beatae ipsam, ipsa excepturi, eveniet, placeat ea amet facere eligendi, dolore. </p>
+    <p class="chapter" id="chaper2">class : chapter, id : chapter2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit debitis fugit aperiam dignissimos labore obcaecati voluptatibus repudiandae repellat molestias beatae ipsam, ipsa excepturi, eveniet, placeat ea amet facere eligendi, dolore. </p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+/* "*"는 전체 선택자 */
+* {
+  padding: 10;
+  margin: 10;
+}
+
+/* type selector */
+h1 {
+  color: red;
+  font-size: 13px;
+  margin: 0; /* 값이 0일대는 px 단위를 안적음 em도 마찬가지 */
+}
+
+p {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+/*class 선택자*/
+.section {
+  color: #333;
+  margin-bottom: 40px;
+}
+p.section-title {
+  font-size: 18px;
+}
+p.section-content {
+  font-size: 13px;
+  line-height: 13px;
+  color: #999;
+}
+
+/* id selector
+id 는 고유하다, class id 중 id가 더 우선순위다 */
+#index-title {
+  font-size: 38px;
+}
+
+p#index-description {
+  font-size: 12px;
+  color: cyan;
+}
+
+/* 복합 선택자 */
+/* 하위선택자(밑에 모두 선택) */
+section ul {
+  border: 1px solid black;
+}
+
+/* 자식 선택자(바로 밑에만 선택) */
+section>ul {
+  border: 3px solid blue;
+}
+
+/* 형제 선택자 두개는 우선도가 같다 : 우선도가 같은 경우 코드라인에 나중에 작성이 우선 */
+
+/* 일반 형제 선택자 : 같은 레벨에 있는 친구들중에 전부 */
+h1~ul {
+  background-color: Cyan;
+  color: green;
+}
+
+/* 인접 형제 서택자 : 같은 레벨에 있는 친구중 바로 붙어있는녀석만 적용 */
+h1+ul {
+  background-color: yellow;
+  color: Darkblue;
+}
+
+/* 속성선택자 attribute selector */
+a {
+  display: block;
+}
+
+a[href] {
+  color: red;
+}
+
+a[href="naver.com"] {
+  color: blue;
+}
+
+a[href~="abc"] { /* 공백 뒤 abc */
+  color: green;
+}
+
+a[href^="abc"] { /*abc로 시작*/
+  color: cyan;
+}
+
+a[href$="sdf"] { /*sdf로 끝나는*/
+  color: gray;
+}
+
+a[href*="fabc"] { /*fabc 포함*/
+  color: yellow;
+}
+
+a[href |="abc"] { /*abc로 시작하거나 abc- 로 시작함*/
+  color: DarkRed;
+}
+
+
+/* 가상클래스 선택자
+
+E:link
+E:visited
+E:active
+E:hover
+E:focus
+E::first-line
+E::first-letter
+E::before
+E::after */
+
+
+a.pseudo:link {
+  color: green;
+  text-decoration: underline;
+}
+
+a.pseudo:active {
+  color: cyan;
+  font-size: 20px;
+}
+
+a.pseudo:hover {
+  font-size: 30px;
+  color: black;
+}
+
+a.pseudo:visited {
+  color: blue;
+}
+
+a.pseudo::before {
+  content: "Pseudo Before";
+  font-size: 12px;
+  color: black;
+}
+
+a.asdf::first-letter {
+  font-size: 20px;
+}
+
+a.asdf::first-line {
+  color: green;
+}
+
+
+/* css 스타일 적용 우선순위
+
+1. 점수 * 개수로 우선순위 개산됨
+  인라인 : 1000
+  id : 100
+  class : 10
+  tag : 1
+
+2. 우선순위 흑마법
+  important : 무조건 모든 우선순위에서 최상위를 점함 */
+
+
+/* 서체지정
+
+1. 폰트 : serif (세리프), sans-serif (세리프 없음), monospace (간격이 동일)..
+2. 크기 단위 : px, em (부모 폰트크기 대비 배율)
+   => 주로 px 사용하는편 em은 소수점으로 떨어지면 가독서이 떨어지게 뿌옇게 출력됨
+3. font-style : italic(폰트에 기울임꼴이 있으면 폰트를호출), normal, oblique (무조건 브라우저가 기울임)
+4. 굵기 font-weight : lighter, normal, bold, bolder, inherit or 숫자
+5. 줄간격 line-height : 1.5 (비율 입력, px도 가능하나 별로 안함)
+6. text-decoration : none, underline, overline, line-thought(취소선)
+7. text-align : left, center, right, justify (양쪽정렬)
+8. text-indent: 1em; (들여쓰기), -1em; (내어쓰기)
+9. 자간 : letter-spacing: 5px;
+10. 수직정렬 : vertical-align: 속한 라인 기준으로 상하 위치 결정
+11. textbox */
+p.fonttest {
+  text-align: left;
+  letter-spacing: 1px;
+  font: sans-serif;
+  line-height: 2em;
+  font-weight: lighter;
+  text-indent: -1em;
+  padding: 1em;
+}
+
+.textbox {
+  width: 200px;
+  white-space: pre-wrap;;
+  border: 1px solid black;
+  font-size: 7px;
+  padding: 10px;
+}

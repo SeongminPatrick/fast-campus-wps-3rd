@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- 외부 css 링크 -->
+  <!-- link:css tab -->
+  <link rel="stylesheet" href="external-style-sheet.css">
+
+  <!-- 내부 css는 이제 거의 사용하지 않는다
+  테스트 용도로나 쓰는 정도 -->
+  <!-- style[type="text/css"] tab -->
+  <style type="text/css">
+    #body-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: DarkSlateGray;
+    }
+  </style>
+
+  <title>Internal Style Sheet</title>
+
+</head>
+<body>
+
+  <!-- p#body-title tab -->
+  <p id="body-title">Internal Style Sheet</p>
+  <!-- 인라인 css -->
+  <p id="body-title2" style="font-size: 36px; font-weight: bold">Internal Style Sheet</p>
+  <!-- 외부 css파일 적용 추천-->
+  <p id="body-title3">External Style Sheet</p>
+
+  <!-- a[href=naver.com]{content}*5 tab -->
+  <a href="naver.com">content</a>
+  <a href="naver.com">content</a>
+  <a href="naver.com">content</a>
+  <a href="naver.com">content</a>
+  <a href="naver.com">content</a>
+
+</body>
+</html>
