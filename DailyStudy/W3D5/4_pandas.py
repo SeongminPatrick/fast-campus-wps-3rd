@@ -174,3 +174,37 @@ site_b_df.plot.scatter(x="deposit", y="rent")
 
 # histogram
 site_a_df.deposit.hist(color="red")
+
+
+"""  마치며..
+
+서버 => pandas, matplotlib, => 이미지 => 클라이언트
+리소스 ++++
+히스토그램 :: API ( JSON API )
+클라이언트 자바스크립트 :: 시각화
+
+시각화 :: d3.js, highcharts.   # 동적인 자바스크립트 라이브러리
+시각화 :: 파이썬 => 이미지
+         파이썬 => HTML, CSS, Javascript
+                  DataFrame + Bokeh
+
+100 시간
+
+기본적인 연습 +++
+Class ( 객체 지향 프로그래밍 ) :: People, Animal, Request, Response
+                             학원:: 패스트캠퍼스, 스쿨, 웹프스,
+--------------------------------------------------------------
+기능 => 코드 => 완성
+--------------------------------------------------------------
+테스트 => 코드 => 완성 ( 테스트 주도 개발 ) :: TDD
+        테스트 주도 개발...!
+파이썬 테스트 코드?
+--------------------------------------------------------------
+pytest, unittest :: cli
+
+Full Stack Framework, Micro Framework
+
+dobestan@gmail.com, 01022205736
+
+
+"""
