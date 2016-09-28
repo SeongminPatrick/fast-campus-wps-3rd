@@ -1,0 +1,89 @@
+.relative1 {
+  width: 300px;
+  height: 200px;
+  background-color: black;
+}
+
+.relative2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  text-align: center;
+  /*line-height: 100px;*/
+  color: white;
+  display: block;
+
+  position: relative;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.fixed {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: white;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+
+}
+
+.dummy {
+  width: 500px;
+  height: 500px;
+  background-color: gray;
+
+}
+/*부모레이아웃 기준에서 top, right로 이동*/
+.absolute {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: cyan;
+
+  top: 10px;
+  right: 10px;
+
+}
+
+.relative3 {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background-color: lightgray;
+
+}
+body {
+  margin: 0;
+}
+.parent {
+  width: 100%;
+  height: 500px;
+  background: yellow;
+}
+
+/*가운데 정렬 방법*/
+
+.child {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  background: blue;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: bottom;
+
+  }
+
+.vcenter {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+span > a {
+  top: 50%;
+  transform: translateY(-50%);
+}

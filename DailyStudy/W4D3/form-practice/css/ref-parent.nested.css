@@ -1,0 +1,15 @@
+#page {
+  width: 800px; }
+  #page a {
+    text-decoration: none;
+    font-size: 11px; }
+    #page a:hover {
+      color: red; }
+
+.container {
+  margin-left: 10px;
+  margin-right: 12px;
+  border-top-style: solid;
+  border-top-width: 2px; }
+
+/*# sourceMappingURL=ref-parent.nested.css.map */

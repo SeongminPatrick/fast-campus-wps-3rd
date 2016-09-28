@@ -1,0 +1,37 @@
+table {
+  border-collapse: collapse;
+}
+
+tr, th, td {
+  border: 1px solid black;
+  padding: 5px 10px;
+  color: #333;
+}
+
+th {
+  background-color: #666;
+  color: white;
+}
+
+table > colgroup > col.col-1 {
+  background-color: blue;
+}
+
+table > colgroup > col.col-2 {
+  background-color: red;
+}
+
+table > colgroup > col.col-3 {
+  border-right-style: double;
+  border-width: 5px;
+  border-color: gray;
+}
+
+table > colgroup > col.col-4 {
+  background-color: gray;
+}
+
+table.table-collapse {
+  border-collapse: collapse;
+  border-spacing: 10px;
+}

@@ -1,0 +1,101 @@
+div.background {
+  margin-left: 150px;
+  margin-top: 70px;
+  background-image: url('./images/pika.png');
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  /*background-position: 50% 16px;*/
+  /*left, right, top, botttom, center*/
+  background-position: 100px 70px;
+  background-attachment: fixed;
+  overflow-y: auto;
+  /*속기법
+  align-content: url('./images/sea.jag') no-repeat scroll right 50% #eee;*/
+}
+
+div.border {
+  margin-top: 40px;
+  padding-top: 10px;
+  width: 200px;
+  height: 200px;
+  border-width: 3px 4px 5px 6px;
+  border-style: solid double dotted dashed;
+  border-color: red green blue yellow;
+  overflow-y: auto;
+  /* border 속기법
+  border: 1px solid red; */
+}
+
+/*box elemets
+박스는 콘텐츠 패딩 보더 마진 4가지로 이뤄져있다*/
+div.box-margin1 {
+  border: 1px solid red;
+  background-color: darkred;
+  width: 400px;
+  height: 200px;
+  margin: 20px 30px 40px 50px;
+  color: white;
+  overflow-y: auto;
+}
+
+span.box-margin1 {
+  background-color: darkblue;
+  width: 200px;
+  height: 100px;
+  margin: 20px 30px 40px 50px;
+  color: white;
+}
+/*세로 마진은 서로 겹친다 가로는 안겹침*/
+div.box-margin2 {
+  background-color: darkgreen;
+  width: 300px;
+  height: 200px;
+  margin: 20px 30px 40px 50px;
+}
+
+div.box-padding1 {
+  width: 200px;
+  height: 100px;
+  padding: 30px;
+  background-color: yellow;
+}
+
+div.box-padding2 {
+  /*크기는 width height border padding 값이 다 더해서 출력된다*/
+  width: 200px;
+  height: 100px;
+  /*padding 이 들어가면 박스크기가 그만큼 커진다*/
+  padding: 40px;
+  background-color: cyan;
+}
+
+div.border-box {
+  width: 200px;
+  height: 100px;
+  border: 10px solid red;
+  padding: 15px;
+  /*보더까지 크기로 고정*/
+  box-sizing: border-box;
+  margin: 10px
+}
+
+div.content-box {
+  width: 200px;
+  height: 100px;
+  border: 10px solid red;
+  padding: 15px;
+  /*컨텐츠부분까지 크기로 고정*/
+  box-sizing: content-box;
+  margin: 10px;
+}
+
+ul.list-style-position-inside {
+  list-style-position: inside;
+}
+
+ul.list-style-position-outside {
+  list-style-position: outside;
+  list-style: square url('./images/pika.png') outside;
+}

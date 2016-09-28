@@ -1,0 +1,23 @@
+span {
+  display: block;
+  border: 1px solid gray;
+  width: 200px;
+  height: 200px;
+  overflow: auto;
+  padding: 10px 10px;
+}
+
+div {
+  /*사라지게함*/
+  display: none;
+  /*투명하게함*/
+  visibility: hidden;
+  /*넘김 숨김*/
+  overflow: hidden;
+  /*영역 밖으로 콘텐츠가 나간 모양이 보임*/
+  overflow: visible;
+  /*스크롤링 할때만 스크롤바가 생김*/
+  overflow: auto;
+  /*항상 스크롤바가 있음*/
+  overflow: scroll;
+}

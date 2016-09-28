@@ -1,0 +1,56 @@
+h3 {
+  padding: 10px 0;
+  clear: left
+}
+
+div.float-element {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  background: black;
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+  opacity: 0.6;
+
+}
+.fl1 {
+  float: left;
+}
+
+.fl2 {
+  float: left;
+}
+
+.fl3 {
+  float: left;
+}
+
+.float-img {
+  float: left
+}
+
+.clear {
+  clear: left
+}
+
+/*overflow 막는 방법 세가지 clear-both, overflow hidden, 부모 객체도 float 시킴*/
+.float-frame {
+  width: 300px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  padding: 10px;
+  /*float: left*/
+}
+
+.float-unit {
+  width: 50px;
+  background: #333;
+  color: #fff
+  font-size 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  margin-right: 5px;
+  float: right;
+}

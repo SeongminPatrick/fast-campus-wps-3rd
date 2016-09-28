@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "idex.min.css",
+	"sources": [
+		"../sass/idex.sass"
+	],
+	"mappings": "AAAA,AACM,EADJ,AAAA,IAAI,CACJ,IAAI,AAAA,UAAU,AAAC,CACb,KAAK,CAAE,IAAK,CACZ,MAAM,CAAE,IAAK,CAAG",
+	"names": []
+}

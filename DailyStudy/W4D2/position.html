@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="position.css">
+  <title>Document</title>
+</head>
+<body>
+
+<!-- 레이아웃 종류
+static : 기본값
+relative : 자기자신을 기준으로 top left 값으로 이동가능
+fixed : 화면을 따라감 (스크롤을 따라감)
+absolute : 부모레이아웃 기준에서 top, right로 이동 보통 relative 또는 fixed 안에서 설정한다 -->
+
+  <div class="relative1">
+    <span class="relative2"><p>Relative2<br>Relative2<p></span>
+  </div>
+  <div class="fixed">Fixed
+    <div class="absolute"></div>
+  </div>
+  <div class="dummy">
+    <div class="relative3">
+      <div class="absolute"></div>
+    </div>
+  </div>
+
+<!-- 가운대 정렬 -->
+
+  <div class="parent">
+    <div class="child vcenter">Child<br>next line</div>
+  </div>
+
+</body>
+</html>

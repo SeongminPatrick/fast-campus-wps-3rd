@@ -20,7 +20,8 @@ FAST-CAMPUS WEB DailyStudy
 
 ### Week 4
 - [Day01. HTML/CSS 기초][4-1]
-
+- [Day02. CSS][4-2]
+- [Day03. CSS심화/Sass][4-3] 
 
 
 
@@ -61,3 +62,5 @@ FAST-CAMPUS WEB DailyStudy
 [3-4]: https://www.evernote.com/l/An3IiMeywcNOFqZnh63rXTeEiXvDxrxESNk
 [3-5]: https://www.evernote.com/l/An0oyPaEhwJBI6L40gR95T2HVBDgPe_fAr0
 [4-1]: https://www.evernote.com/l/An0wdPtu28dDNbez7aHNCHsY8HTjhie9tJM
+[4-2]: https://www.evernote.com/l/An3FT1SDGSdB-bcNae_Q8CwG4-11emP5nXA
+[4-3]: https://www.evernote.com/l/An19un2PgytPM4w4NJPtiznrlsEmt4nAj4Y
