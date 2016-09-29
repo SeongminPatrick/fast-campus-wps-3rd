@@ -1,10 +1,10 @@
 nav.navbar-no-margin { margin: 0; }
 
-ul.nav span.nav-black { width: 20px; height: 50px; }
+ul.nav .nav-blank { width: 20px; height: 50px; }
 
 div.index-img-container { position: relative; background-image: url(../images/MainSearch-img.jpg); height: 600px; background-repeat: no-repeat; background-color: black; background-position: center top; }
 
-div.index-img-container .index-img-caption { position: absolute; top: 132px; left: 25%; color: white; text-align: right; }
+div.index-img-container .index-img-caption { position: absolute; top: 140px; left: 15%; color: white; text-align: right; }
 
 div.index-img-container .index-img-caption .caption-top { font-size: 15px; }
 
