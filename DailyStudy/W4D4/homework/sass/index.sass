@@ -1,0 +1,37 @@
+/*네비바 하단 마진 삭제*/
+nav.navbar-no-margin
+  margin: 0
+
+.custom-main-container
+  /*자식클래스 absolute를 위해 relative 설정*/
+  position: relative
+  height: 678px
+  /*백그라운드 이미지 삽입*/
+  background-image: url(../images/index-bg.jpg)
+  background-position: center
+  /*이미지 반복 금지*/
+  background-repeat: no-repeat
+  background-color: black
+  /*검색창과 타이틀을 묶은 컨테이너*/
+  .custom-search-title-container
+    /*부모 클래스를 기준으로 이동*/
+    position: absolute
+    /*중간정렬*/
+    left: 50%
+    margin-left: -400px
+    /*상하정렬*/
+    top: 160px
+
+    /*타이틀 컨테이너*/
+    .custom-title-container
+      color: white
+      text-align: right
+      /*타이틀 첫줄*/
+      .title-top
+        font-size: 22px
+        margin-bottom: 0
+      /* 타이틀 둘째줄*/
+      .title-bottom
+        font-size: 36px
+
+    .cumtom-search-container
