@@ -4,31 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- 부트스트렙 연결 -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- custom css 연결 -->
   <link rel="stylesheet" href="css/index.css">
   <title>homework</title>
 </head>
 <body>
+  <!-- 네비게이션바 시작
+  .navbar: 네비게이션의 형태
+  .navbar-default: 네비게이션 스타일
+  .navbar-no-margin: 네비게이션바 하단마진 초기화  -->
   <nav class="navbar navbar-default navbar-no-margin">
+    <!-- container-fluid: block요소로 가로너비 전체를 사용함, 마진기본으로 있음 -->
     <div class="container-fluid">
+      <!-- 로고 시작
+      navbar-header 안에 navbar-brand가 들어감-->
       <div class="navbar-header">
         <a href="#" class="navbar-brand">
           <img src="images/logo.png" alt="">
         </a>
-      </div>
+      </div><!--로고 끝-->
+    <!-- .nav navbar-nav ul 테그에 기본적으로 넣자 -->
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#">방 검색</a></li>
       <li><a href="#">관심목록</a></li>
       <li><a href="#">방 등록</a></li>
+      <!-- 공백을 삽입한다 -->
       <li><a></a></li>
       <li><a href="#">공인중개사 가입</a></li>
       <li><a href="#">회원가입 및 로그인</a></li>
     </ul>
     </div>
-  </nav>
-
+  </nav><!-- 네비게이션바 종료 -->
+  <!-- 메인의 컨테이너 생성 -->
   <div class="container-fluid">
+    <!-- 마진초기화 -->
     <div class="row">
+      <!-- jumbotron 메인타이틀 간단히 설정시 적용
+      search, title  컨테이너를 단계적으로 설정한다
+      title 컨테이너는 top, bottom으로 나뉘어 생성한다 -->
       <div class="jumbotron custom-main-container">
         <div class="custom-search-title-container">
           <div class="custom-title-container">
@@ -36,7 +51,7 @@
             <p class="title-bottom">우리, 살고 싶은 데서 살자</p>
           </div>
           <div class="cumtom-search-container">
-            
+
           </div>
         </div>
       </div>
