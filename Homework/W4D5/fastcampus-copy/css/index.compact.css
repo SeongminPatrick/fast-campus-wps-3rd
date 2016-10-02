@@ -1,6 +1,8 @@
+body { padding-top: 100px; }
+
 h4 { font-weight: 400; color: #444; padding: 30px 0; display: block; }
 
-.custom-nav { background-color: white; border-top: none; border-right: none; border-left: none; position: relative; margin-bottom: 0; }
+.custom-nav { background-color: white; border-top: none; border-right: none; border-left: none; margin-bottom: 0; }
 
 .custom-nav .custom-nav-container { padding: 50px 10px 0 10px; }
 
