@@ -2,10 +2,7 @@ h4 {
   font-weight: 400;
   color: #444;
   padding: 30px 0;
-}
-
-.header-toolbar {
-  height: 55px;
+  display: block;
 }
 
 .custom-nav {
