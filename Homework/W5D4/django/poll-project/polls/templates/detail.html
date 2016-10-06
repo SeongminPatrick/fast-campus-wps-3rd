@@ -13,3 +13,12 @@
   {% endfor %}
   <input type="submit" value="Vote">
 </form>
+
+
+<h4>Add choice</h4>
+
+<form action="{% url 'polls:add' question.id %}" method="post">
+  {% csrf_token %}
+  <input type="text" name="add">
+  <input type="submit" value="등록하기">
+</form>

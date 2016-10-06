@@ -33,3 +33,9 @@ def vote(request, question_id):
         selected_choice.save()
         redirect_url = reverse('polls:results', args=(question.id,))
         return HttpResponseRedirect(redirect_url)
+
+def add(request, question_id):
+    q = Question.objects.get(pk=question_id)
+    q.choice_set.create(choice_text=request.POST['add'], votes=0)
+    redirect_url = reverse('polls:detail', args=(q.id,))
+    return HttpResponseRedirect(redirect_url)
