@@ -25,6 +25,10 @@
 - [Day04. bootstrap-practice][4-4]
 
 
+### Week5
+- [Day01. 소프트웨어 공학, agile 실습][5-1] 
+- [Day02. djnago-tutorial(blog-project)]
+- [Day03. django-tutorial(poll-project)][5-3]
 
 
 
@@ -66,3 +70,6 @@
 [4-2]: https://www.evernote.com/l/An3FT1SDGSdB-bcNae_Q8CwG4-11emP5nXA
 [4-3]: https://www.evernote.com/l/An19un2PgytPM4w4NJPtiznrlsEmt4nAj4Y
 [4-4]: https://www.evernote.com/l/An0pp3ctx_JJ4LPaudEWUEwJse8ztdi5Dzc
+[5-1]: https://www.evernote.com/l/An1PT_g9SHBDnKWxrlC0r29NJx60KHEIt5c
+[5-2]:
+[5-3]: https://www.evernote.com/l/An0y9ovSB0lNCYQqyOmObcKHRopntWv4Zr0

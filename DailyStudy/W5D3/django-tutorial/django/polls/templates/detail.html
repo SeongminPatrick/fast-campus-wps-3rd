@@ -1,0 +1,26 @@
+<!--
+<h1>{{ question.question_text }}</h1>
+<ul>
+{% for choice in question.choice_set.all %}
+    <li>{{ choice.choice_text }}</li>
+{% endfor %}
+</ul>-->
+
+<h1>{{ question.question_text }}</h1>
+<!--error 시 {{ error_message }} 출력-->
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<!--입력된 데이터를 polls의 vote/{{ question.id }} url에 전달한다-->
+<form action="{% url 'polls:vote' question.id %}" method="post">
+    {% csrf_token %} <!-- 비밀키 같은거 외부에서 데이터 요청시 에러시킴 암호화된 토큰을 받아야 열림 -->
+    <!--choice 모두 반복 호출-->
+    {% for choice in question.choice_set.all %}
+        <!--출력 순서대로 id 값을 갖는 radio button 개체를 만든다-->
+        <!--{ choice : choice.id } key, value를 post 방식으로 requset에 담아 polls:vote/{{ question.id }} url로 전달한다-->
+        <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+        <!--라디오버튼에 라벨를 각각 붙여준다-->
+        <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br />
+    {% endfor %}
+    <!--submit 버튼을 만든다-->
+    <input type="submit" value="Vote" />
+</form>

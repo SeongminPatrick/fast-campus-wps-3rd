@@ -1,0 +1,14 @@
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <!--<li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>-->
+
+        <!--url을 동적으로 변경-->
+        <!--url name 'detail'을 찾아가게 만든다-->
+        <!--question.id를 붙여서 detail url에 대입하고 합쳐진 url을 가져온다-->
+        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
