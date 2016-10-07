@@ -29,7 +29,7 @@
 - [Day01. 소프트웨어 공학, agile 실습][5-1] 
 - [Day02. djnago-tutorial(blog-project)]
 - [Day03. django-tutorial(poll-project)][5-3]
-
+- [Day04. django-documentaion-Model][5-4]
 
 
 
@@ -73,3 +73,4 @@
 [5-1]: https://www.evernote.com/l/An1PT_g9SHBDnKWxrlC0r29NJx60KHEIt5c
 [5-2]:
 [5-3]: https://www.evernote.com/l/An0y9ovSB0lNCYQqyOmObcKHRopntWv4Zr0
+[5-4]: https://www.evernote.com/l/An29sh5fVXtMbq33LqEneVJFWhsHDAJqFuM
