@@ -1,0 +1,13 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+  {% for video in videos %}
+    <p class="video_title"><a href="{% url 'video:video_detail' pk=video.pk %}">{{ video.title|truncatewords:10}}</a></p>
+    <p>수정일 {{ video.published_date }}</p>
+    <p>등록일: {{ video.created_date }}</p>
+    <p>카테고리: {{ video.category }}</p>
+    <p class="video_address">주소: {{ video.address }}</p>
+
+  {% endfor %}
+
+{% endblock %}

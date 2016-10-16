@@ -1,0 +1,18 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+    <div class="container">
+      <a href="{% url 'video:video_edit' pk=video.pk %}" class="btn btn-default">
+        <span class="glyphicon glyphicon-pencil"></span>
+      </a>
+    </div>
+    <div class="container">
+      <p>수정일 {{ video.published_date }}</p>
+      <p>등록일: {{ video.created_date }}</p>
+      <p>카테고리: {{ video.category }}</p>
+      <p>제목: {{ video.title }}</p>
+      <p>주소: {{ video.address }}</p>
+      <p>재생수: {{ video.view_count}}</p>
+      <p>좋아요수: {{ video.like_count}}</p>
+    </div>
+{% endblock %}
