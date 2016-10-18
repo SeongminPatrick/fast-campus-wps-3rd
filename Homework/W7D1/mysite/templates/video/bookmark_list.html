@@ -1,0 +1,15 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+<div class="container">
+{% for video in videos %}
+  <p>Thumbnails: <img src="{{ video.thumbnails }}" alt=""></p>
+  <p>Kind: {{ video.kind }}</p>
+  <p>VideoId: {{ video.videoId }}</p>
+  <p>Title: {{ video.title }}</p>
+  <p>Description: {{ video.description}}</p>
+  <p>publishedAt: {{ video.publishedAt }}</p>
+{% endfor %}
+</div>
+
+{% endblock %}
