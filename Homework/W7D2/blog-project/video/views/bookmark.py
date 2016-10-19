@@ -40,7 +40,7 @@ def add_bookmark(request):
 
 
 def bookmark_list(request):
-    videos = Video.objects.all()
+    videos = Video.objects.all().order_by('-dadd_date')
     return render(request, 'video/bookmark_list.html', {'videos': videos})
 
 

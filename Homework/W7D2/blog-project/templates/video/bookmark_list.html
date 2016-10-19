@@ -15,6 +15,7 @@
   <p>Title: {{ video.title }}</p>
   <p>Description: {{ video.description|truncatewords:30 }}</p>
   <p>publishedAt: {{ video.published_date }}</p>
+  <p>addDate: {{ video.add_date }}</p>
   <a href="{% url 'video:bookmark_delete' pk=video.pk %}" type="button" class="btn btn-default">Delete</a>
 </div>
 {% endfor %}
