@@ -8,7 +8,7 @@ YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
 
 
-def youtube_search(keyword, page_token, max_results=10):
+def youtube_search(keyword, page_token, max_results=5):
     youtube = build(
         YOUTUBE_API_SERVICE_NAME,
         YOUTUBE_API_VERSION,
@@ -40,5 +40,11 @@ def youtube_search(keyword, page_token, max_results=10):
         if Video.objects.filter(youtube_id=cur_video_id).exists():
            item['is_exist'] = True
 
+    # 다음페이지 버튼이 안나온다 어떻게 하지?
 
+    try:
+        video_response['nextPageToken'] = search_response['nextPageToken']
+        video_response['prevPageToken'] = search_response['prevPageToken']
+    except:
+        pass
     return video_response
