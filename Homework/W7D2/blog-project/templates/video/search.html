@@ -29,11 +29,11 @@
           <input type="hidden" name="kind" value="{{ item.kind }}">
           <input type="hidden" name="youtube_id" value="{{ item.id }}">
           <input type="hidden" name="title" value="{{ item.snippet.title }}">
-          <input type="hidden" name="description" value="{{ item.snippet.description }}">
+          <input type="hidden" name="description" value="{{ item.snippet.description|truncatewords:30 }}">
           <input type="hidden" name="published_date" value="{{ item.snippet.publishedAt }}">
           <input type="hidden" name="thumbnail_url" value="{{ item.snippet.thumbnails.medium.url }}">
           <input type="hidden" name="path" value="{{ request.full_path }}">
-          <p>테그: {{ item.snippet.tags }}</p>
+          <p>테그: {{ item.snippet.tags|truncatewords:30 }}</p>
           <p>조회수: {{ item.statistics.viewCount }}</p>
           <p>좋아요: {{ item.statistics.likeCount }}</p>
           <p>싫어요: {{ item.statistics.dislikeCount }}</p>

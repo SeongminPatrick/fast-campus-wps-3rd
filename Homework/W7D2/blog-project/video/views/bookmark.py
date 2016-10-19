@@ -6,6 +6,7 @@ __all__ = [
     'add_bookmark',
     'bookmark_list',
     'bookmark_detail',
+    'bookmark_delete',
 ]
 
 def add_bookmark(request):
@@ -46,3 +47,10 @@ def bookmark_list(request):
 def bookmark_detail(request, pk):
     video = Video.objects.get(pk=pk)
     return render(request, 'video/bookmark_detail.html', {'video': video})
+
+def bookmark_delete(request, pk):
+    video = Video.objects.get(pk=pk)
+    msg = '%s 영상을 북마크에서 삭제했습니다' % video.title
+    video.delete()
+    messages.success(request, msg)
+    return redirect('video:bookmark_list')

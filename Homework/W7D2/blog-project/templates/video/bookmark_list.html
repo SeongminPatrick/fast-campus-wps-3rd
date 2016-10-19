@@ -13,8 +13,9 @@
   <p>Kind: {{ video.kind }}</p>
   <p>VideoId: {{ video.youtube_id }}</p>
   <p>Title: {{ video.title }}</p>
-  <p>Description: {{ video.description}}</p>
+  <p>Description: {{ video.description|truncatewords:30 }}</p>
   <p>publishedAt: {{ video.published_date }}</p>
+  <a href="{% url 'video:bookmark_delete' pk=video.pk %}" type="button" class="btn btn-default">Delete</a>
 </div>
 {% endfor %}
 {% endblock %}
