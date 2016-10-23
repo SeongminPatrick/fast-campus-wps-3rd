@@ -1,0 +1,52 @@
+<!-- 커스텀 필터 가져오기 -->
+{% load app_filters %}
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Youtube bookmark</title>
+</head>
+<body>
+  <form action="">
+	  <input type="text" name="keyword" placeholder="{{ keyword }}">
+		<button type="submit">검색</button>
+	</form>
+
+	<ul>
+    <!-- item 항목을 돌린다 -->
+		{% for item in response.items %}
+		<li>
+      <p>{{ forloop.counter }}</p>
+      <p>제목: {{ item.snippet.title }}</p>
+      <img src="{{ item.snippet.thumbnails.medium.url }}" alt="">
+      <p>{{ item.snippet.description }}</p>
+      <!-- 스트링을 데이트타임으로 바꾸고 다시 데이트 필터검 -->
+      <!-- https://docs.djangoproject.com/en/1.10/howto/custom-template-tags/ -->
+      <p>게시일: {{ item.snippet.publishedAt|string_to_date|date:"Y.m.d h:i" }}</p>
+    </li>
+		{% endfor %}
+	</ul>
+        {% if response.prevPageToken %}
+		<a href="{% url 'video:search' %}?keyword={{ keyword }}&page_token={{ response.prevPageToken }}">이전페이지</a>
+		{% endif %}
+
+		<!--
+			첫 페이지로 가기 버튼 만들어보세요
+				(첫 페이지에선 나오면 안 됩니다)
+		-->
+		{% if response.prevPageToken %}
+		<a href="{% url 'video:search' %}?keyword={{ keyword }}">첫 페이지로 가기</a>
+		{% endif %}
+
+
+		{% if response.nextPageToken %}
+		<a href="{% url 'video:search' %}?keyword={{ keyword }}&page_token={{ response.nextPageToken }}">다음페이지</a>
+		{% endif %}
+
+
+</body>
+</html>
